@@ -39,7 +39,7 @@ class ImportOrganizations extends Command
      */
     public function handle()
     {
-        Excel::import(new OrganizationsImport($this->organizationRepository), '/Users/ashwinmram/OneDrive/LinkedIn Tracking Sheet.xlsm');
+        Excel::import(new OrganizationsImport($this->organizationRepository), 'LinkedIn Tracking Sheet.xlsm');
 
         $this->info("Organizations imported successfully!");
     }

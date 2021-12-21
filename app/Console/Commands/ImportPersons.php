@@ -39,7 +39,7 @@ class ImportPersons extends Command
      */
     public function handle()
     {
-        Excel::import(new PersonsImport($this->personRepository), '/Users/ashwinmram/OneDrive/LinkedIn Tracking Sheet.xlsm');
+        Excel::import(new PersonsImport($this->personRepository), 'LinkedIn Tracking Sheet.xlsm');
 
         $this->info("Persons imported successfully!");
     }
